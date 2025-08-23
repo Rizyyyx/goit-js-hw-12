@@ -16,3 +16,40 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.btn-load {
+  display: block;
+  justify-content: center;
+  margin: 20px auto;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
